@@ -1,0 +1,106 @@
+.footer {
+  background-color: var(--main-background-color);
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-address__list {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  margin-top: 60px;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--accent-text-color);
+  text-decoration: none;
+}
+
+.footer__link,
+.footer-address__link {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.footer-address {
+  padding-top: 20px;
+}
+.footer__link {
+  color: var(--address-text-color);
+}
+.footer-address__link {
+  color: var(--accent-text-color);
+}
+.footer-icon {
+  width: 206px;
+  height: 80px;
+}
+.footer-icon__title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--accent-text-color);
+}
+
+.footer-icon__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 206px;
+  height: 80px;
+  margin: 0 auto;
+  column-gap: 10px;
+  padding-top: 16px;
+}
+
+.footer-icon__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-icon__svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--accent-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .footer-icon__link:hover &,
+  .footer-icon__link:focus & {
+    fill: var(--accent-text-color);
+  }
+}
