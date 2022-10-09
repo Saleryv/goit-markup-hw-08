@@ -1,63 +1,195 @@
-.hero__container {
-  display: block;
-  align-items: center;
-  padding-bottom: 200px;
-}
+@media screen and (max-width: 767px) {
+  .hero__container {
+    display: block;
+    align-items: center;
+    height: 400px;
+  }
 
-.hero {
-  margin: 0 auto;
-  max-width: 1600px;
-  background-color: var(--main-background-color);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bgi.jpg);
-  background-size: cover;
-}
+  .hero {
+    margin: 0 auto;
+    max-width: 480px;
+    background-color: var(--main-background-color);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/mobile/hero-bgi.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 
-.hero__title {
-  font-family: var(--primary-font);
-  font-style: normal;
-  @include font(44px, 900, 60px);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent-text-color);
-  display: flex;
-  text-align: center;
-  padding-top: 200px;
-  margin-bottom: 30px;
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero__btn {
-  font-family: var(--primary-font);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: var(--accent-text-color);
-  background-color: var(--accent-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-  align-items: center;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  padding: 10px 32px;
-
-  transition-property: color;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
+  .hero__title {
+    font-family: var(--primary-font);
+    font-style: normal;
+    @include font(26px, 900, 42px);
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
     color: var(--accent-text-color);
-    background-color: var(--btn-bg-color);
+    display: flex;
+    text-align: center;
+    padding-top: 118px;
+    margin-bottom: 30px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__btn {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--accent-text-color);
+    background-color: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+      background-color: var(--btn-bg-color);
+    }
+  }
+}
+// ============== mobile 2X ===============
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero/mobile/hero-bgi@2x.jpg);
+  }
+}
+// ================== TABLET ========================
+@media screen and (min-width: 768px) {
+  .hero__container {
+    display: block;
+    align-items: center;
+    height: 400px;
+  }
+
+  .hero {
+    margin: 0 auto;
+    max-width: 768px;
+    background-color: var(--main-background-color);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero/tablet/hero-bgi.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .hero__title {
+    font-family: var(--primary-font);
+    font-style: normal;
+    @include font(26px, 900, 42px);
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+    display: flex;
+    text-align: center;
+    padding-top: 118px;
+    margin-bottom: 30px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__btn {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--accent-text-color);
+    background-color: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+      background-color: var(--btn-bg-color);
+    }
+  }
+}
+// ============= TABLET 2X ==================
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero/tablet/hero-bgi@2x.jpg);
+  }
+}
+// =============== DESKTOP ===========================
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    height: 600px;
+  }
+
+  .hero__container {
+    display: block;
+    align-items: center;
+    padding-bottom: 200px;
+  }
+
+  .hero {
+    margin: 0 auto;
+    max-width: 1600px;
+    background-color: var(--main-background-color);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero/hero-bgi.jpg);
+    background-size: cover;
+  }
+
+  .hero {
+    background-image: url(/images/hero/desktop/hero-bgi.jpg);
+    max-width: 1600px;
+    max-height: 600px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .hero__title {
+    @include font(44px, 900, 60px);
+    padding-top: 200px;
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

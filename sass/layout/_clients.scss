@@ -1,56 +1,153 @@
-.clients__title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  padding-top: 69px;
-}
-.clients__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 30px;
-  padding-bottom: 94px;
-  padding-top: 50px;
-}
-.clients__item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+@media screen and (max-width: 767px) {
+  .clients__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 60px;
+    // padding-top: 50px;
+  }
+  .clients__item {
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+      cursor: pointer;
+    }
+  }
+
+  .clients__icon {
+    fill: #afb1b8;
+    width: 106px;
+    height: 60px;
+    // padding: 16px 32px;
+    padding: auto;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .clients__item:hover &,
+    .clients__item:focus & {
+      fill: var(--accent-color);
+    }
   }
 }
 
-.clients__icon {
-  fill: #afb1b8;
-  height: 92px;
-  padding: 16px 32px;
+@media screen and (min-width: 768px) {
+  .clients__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    padding-bottom: 60px;
+    // padding-top: 50px;
+  }
 
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .clients__item {
+    width: 226px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
 
-  .clients__item:hover &,
-  .clients__item:focus & {
-    fill: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+      cursor: pointer;
+    }
+  }
+
+  .clients__icon {
+    fill: #afb1b8;
+    width: 106px;
+    height: 60px;
+    // padding: 16px 32px;
+    padding: auto;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .clients__item:hover &,
+    .clients__item:focus & {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.16;
+    padding-top: 69px;
+  }
+  .clients__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    padding-bottom: 94px;
+    padding-top: 50px;
+  }
+  .clients__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
+  .clients__icon {
+    fill: #afb1b8;
+    height: 92px;
+    padding: auto;
   }
 }
