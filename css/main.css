@@ -1532,7 +1532,6 @@ button {
     background-color: var(--accent-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 30px;
   }
   .team-list__text {
     padding-top: 50px;
@@ -1609,7 +1608,6 @@ button {
     flex-wrap: wrap;
     list-style: none;
     column-gap: 30px;
-    padding-bottom: 90px;
   }
   .team-list__card {
     width: 270px;
@@ -1728,7 +1726,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 36px;
     line-height: 1.16;
