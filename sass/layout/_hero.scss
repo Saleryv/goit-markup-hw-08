@@ -31,7 +31,7 @@
     text-align: center;
     padding-top: 118px;
     margin-bottom: 30px;
-    width: 360px;
+    // width: 360px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -68,11 +68,11 @@
 }
 // ============== mobile 2X ===============
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url(/images/hero/mobile/hero-bgi@2x.jpg);
+    background-image: url(../images/hero/mobile/hero-bgi@2x.jpg);
   }
 }
 // ================== TABLET ========================
@@ -91,7 +91,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero/tablet/hero-bgi.jpg);
+      url(../images/hero/tablet/hero-bgi.jpg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -145,11 +145,11 @@
 }
 // ============= TABLET 2X ==================
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url(/images/hero/tablet/hero-bgi@2x.jpg);
+    background-image: url(../images/hero/tablet/hero-bgi@2x.jpg);
   }
 }
 // =============== DESKTOP ===========================
@@ -172,7 +172,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero/desktop/hero-bgi.jpeg);
+      url(../images/hero/desktop/hero-bgi.jpeg);
     background-size: cover;
   }
 
@@ -185,12 +185,13 @@
     margin-right: auto;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+// ===================== DESKTOP 2X =====================
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(/images/hero/desktop/hero-bgi@2x.jpeg);
+    background-image: url(../images/hero/desktop/hero-bgi@2x.jpeg);
     max-width: 1600px;
     max-height: 600px;
     background-size: cover;

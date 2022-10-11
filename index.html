@@ -196,12 +196,23 @@
             <li class="our-case__item">
               <a href="" class="our-case__link link">
                 <div class="our-case__thumb">
-                  <img
-                    src="./images/features/box1.jpg"
-                    alt="type on keyboard"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/our-case/case1.jpeg    1x,
+                        ./images/our-case/case1@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="#"
+                      alt="type on keyboard"
+                      width="370"
+                      height="295"
+                    />
+                  </picture>
+
                   <div class="our-case__overlay">
                     <p class="our-case__text">Десктопні додатки</p>
                   </div>
@@ -211,12 +222,22 @@
             <li class="our-case__item">
               <a href="" class="our-case__link link">
                 <div class="our-case__thumb">
-                  <img
-                    src="./images/features/img.jpg"
-                    alt="with phone"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/our-case/case2.jpeg    1x,
+                        ./images/our-case/case2@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="#"
+                      alt="type on keyboard"
+                      width="370"
+                      height="295"
+                    />
+                  </picture>
                   <div class="our-case__overlay">
                     <p class="our-case__text">Мобільні додатки</p>
                   </div>
@@ -227,12 +248,22 @@
             <li class="our-case__tem">
               <a href="" class="our-case__link link">
                 <div class="our-case__thumb">
-                  <img
-                    src="./images/features/img-2.jpg"
-                    alt="with tablet"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/our-case/case3.jpeg    1x,
+                        ./images/our-case/case3@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="#"
+                      alt="type on keyboard"
+                      width="370"
+                      height="295"
+                    />
+                  </picture>
                   <div class="our-case__overlay">
                     <p class="our-case__text">Дизайнерські рішення</p>
                   </div>
@@ -730,21 +761,19 @@
           </ul>
         </div>
         <form class="footer-form">
-          <label class="footer-form__field">
-            <span class="footer-form__desk">Підпишіться на розсилку</span>
-            <span class="footer-form__wrapper">
-              <input
-                name="footer-user-newsletter"
-                class="footer-form__input"
-                type="email"
-                placeholder="&nbsp;Email" />
-              <button type="submit" class="footer-form__btn">
-                Підписатися
-                <svg class="footer-form__icon">
-                  <use href="./images/sprite.svg#icon-footer-send"></use>
-                </svg></button
-            ></span>
-          </label>
+          <span class="footer-form__desk">Підпишіться на розсилку</span>
+          <span class="footer-form__wrapper">
+            <input
+              name="footer-user-newsletter"
+              class="footer-form__input"
+              type="email"
+              placeholder="&nbsp;Email" />
+            <button type="submit" class="footer-form__btn">
+              Підписатися
+              <svg class="footer-form__icon">
+                <use href="./images/sprite.svg#icon-footer-send"></use>
+              </svg></button
+          ></span>
         </form>
       </div>
     </footer>
